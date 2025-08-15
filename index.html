@@ -10,10 +10,8 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="text/babel">
-      function App() {
-        return <h1>Hello from JSX</h1>;
-      }
+    <script type="text/babel" data-presets="env,react" src="./App.jsx"></script>
+    <script type="text/babel" data-presets="env,react">
       const root = ReactDOM.createRoot(document.getElementById('root'));
       root.render(<App />);
     </script>
